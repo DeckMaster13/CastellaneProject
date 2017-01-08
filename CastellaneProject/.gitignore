@@ -1,0 +1,8 @@
+*.obj
+*.exe
+*.lib
+*.dll
+*.vcproj
+*.pdb
+*.log
+*.html
