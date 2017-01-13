@@ -2,7 +2,7 @@
 #define __RENDERER__
 
 #include "Vector2D.h"
-#include "SDL.h"
+#include <SDL2/SDL.h>
 
 class Renderer
 {
@@ -10,7 +10,7 @@ public:
 	static Renderer& Instance();
 	SDL_Renderer* getRenderer();
 	void update();
-	
+
 private:
 	Renderer();
 	Renderer(const Renderer& rhs) = delete;

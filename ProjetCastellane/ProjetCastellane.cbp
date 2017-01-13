@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProjetCastellane" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProjetCastellane" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProjetCastellane" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="`sdl2-config --cflags --libs`" />
+			<Add option="-lSDL2_image" />
+		</Linker>
+		<Unit filename="../CastellaneProject/Constants.cpp" />
+		<Unit filename="../CastellaneProject/Constants.h" />
+		<Unit filename="../CastellaneProject/Game.cpp" />
+		<Unit filename="../CastellaneProject/Game.h" />
+		<Unit filename="../CastellaneProject/GameObject.cpp" />
+		<Unit filename="../CastellaneProject/GameObject.h" />
+		<Unit filename="../CastellaneProject/GameState.cpp" />
+		<Unit filename="../CastellaneProject/GameState.h" />
+		<Unit filename="../CastellaneProject/GameStateMachine.cpp" />
+		<Unit filename="../CastellaneProject/GameStateMachine.h" />
+		<Unit filename="../CastellaneProject/InputHandler.cpp" />
+		<Unit filename="../CastellaneProject/InputHandler.h" />
+		<Unit filename="../CastellaneProject/PlayState.cpp" />
+		<Unit filename="../CastellaneProject/PlayState.h" />
+		<Unit filename="../CastellaneProject/Renderer.cpp" />
+		<Unit filename="../CastellaneProject/Renderer.h" />
+		<Unit filename="../CastellaneProject/TextureHandler.cpp" />
+		<Unit filename="../CastellaneProject/TextureHandler.h" />
+		<Unit filename="../CastellaneProject/Vector2D.h" />
+		<Unit filename="../CastellaneProject/main.cpp" />
+		<Unit filename="../CastellaneProject/sprites/Thumbs.db" />
+		<Unit filename="../CastellaneProject/sprites/board.png" />
+		<Unit filename="../CastellaneProject/sprites/chess_tile.png" />
+		<Unit filename="../CastellaneProject/sprites/chess_tile_lighted.png" />
+		<Unit filename="../CastellaneProject/sprites/chess_tile_lighted_orange.png" />
+		<Unit filename="../CastellaneProject/sprites/chess_tile_lighted_red.png" />
+		<Unit filename="../CastellaneProject/sprites/chess_tile_lighted_yellow.png" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

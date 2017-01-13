@@ -1,7 +1,7 @@
 #ifndef __GAME__
 #define __GAME__
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 #include "GameStateMachine.h"
 
 #include <memory>
@@ -12,7 +12,7 @@ public:
 	static Game& Instance();
 
 	~Game() = default;
-	
+
 	bool init();
 	void handleInputs();
 	bool update();

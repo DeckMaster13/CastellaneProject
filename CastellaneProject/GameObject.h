@@ -1,7 +1,7 @@
 #ifndef __GAMEOBJECT__
 #define __GAMEOBJECT__
 
-#include "SDL.h"
+#include <SDL2/SDL.h>
 #include "Vector2D.h"
 #include <string>
 
@@ -41,7 +41,7 @@ public:
 protected:
 	std::string m_objectID;
 	std::string m_textureID;
-	 
+
 	Vector2D m_texturePosition;
 	int m_textureWidth, m_textureHeight;
 

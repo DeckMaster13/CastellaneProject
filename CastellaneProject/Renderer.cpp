@@ -1,5 +1,5 @@
-#include "Renderer.h" 
-#include "SDL.h"
+#include "Renderer.h"
+#include <SDL2/SDL.h>
 #include "Constants.h"
 
 #include <memory>

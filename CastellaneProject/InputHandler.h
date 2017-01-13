@@ -1,7 +1,7 @@
 #ifndef __INPUTHANDLER__
 #define __INPUTHANDLER__
 
-#include "SDL.h"
+#include <SDL2/SDL.h>
 #include "Vector2D.h"
 
 //to move or rename
@@ -12,14 +12,14 @@ enum mouseButtonType
 	RIGHT = 2
 };
 
-class InputHandler 
+class InputHandler
 {
 public:
 	//should be moved somewhere else: no logic in this class
 	//actually it should only returns keyboard and mouseInputs (and SDLInputs such as SDL_QUIT)
 	static bool askedForQuit();
 	static void onQuit();
-	
+
 	//keyboard
 	static void updateInputs();
 	static bool isKeyDown(SDL_Scancode key);

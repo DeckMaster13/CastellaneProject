@@ -2,7 +2,7 @@
 
 #include <algorithm>
 #include <iostream>
-#include <SDL_image.h>
+#include <SDL2/SDL_image.h>
 
 #include "Constants.h"
 #include "InputHandler.h"
@@ -42,7 +42,7 @@ bool PlayState::onEnter()
 	//TEMPORARY
    //texture black/white
 
-   SDL_Surface *image = IMG_Load("sprites/chess_tile.png");
+    SDL_Surface *image = IMG_Load("sprites/chess_tile.png");
 	SDL_Texture *texture = SDL_CreateTextureFromSurface(Renderer::Instance().getRenderer(), image);
 	std::string textureID = "chessTiles";
 	TextureHandler::registerTexture(textureID, texture);

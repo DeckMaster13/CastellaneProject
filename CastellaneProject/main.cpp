@@ -3,8 +3,8 @@
 #include "Vector2D.h"
 #include "Renderer.h"
 #include "TextureHandler.h"
-#include "SDL.h"
-#include "SDL_image.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 #include <vector>
 

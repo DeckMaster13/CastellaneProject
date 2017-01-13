@@ -1,9 +1,10 @@
-#include <SDL_image.h>
+#include <SDL2/SDL_image.h>
 #include "Game.h"
 #include "InputHandler.h"
 #include "TextureHandler.h"
 #include "PlayState.h"
 #include "Renderer.h"
+#include <memory>
 
 static bool running = true;
 
